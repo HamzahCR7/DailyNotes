@@ -1,1 +1,32 @@
 Here Questions will be about ts
+1.What is TS and why its used over JS?
+-> TS is a supereset of JS which gives the functionality like static typing,classes, interfaces,modules,etc
+	It is used over JS mainly because of its static typed features which eradicates most runtime errors,better code quality as user define the type of variables 
+    functions, declare interfaces which improves better code quality.
+
+2.What is interfaces in TS?
+-> Interfaces define the structure of an object and tells which type of property  and methods an object holds.
+   Ex: interface Person { name: string; age: number; }.
+ 
+3. What is type inference in TS?
+-> Type inference is the ability of ts to understand the type of a variable based on initial values assigned.
+
+4.What are generics in ts?
+-> Generic allows you to create resuable component which can be worked with various data types.
+
+5. What is a tuple in ts?
+-> Tuples is a data structure in ts where we can store elements of different types in fixed size collection.
+   it is different then array as array holds same tyoe of elements with length can vary but tuples have different data types elements woth fixed size.
+   Ex: // Declaring a tuple
+	let myTuple: [number, string, boolean];
+
+	// Initializing the tuple
+	myTuple = [42, "hello", true];
+
+	// Accessing elements of the tuple
+	console.log(myTuple[0]); // Output: 42
+	console.log(myTuple[1]); // Output: hello
+	console.log(myTuple[2]); // Output: true
+	
+6. What is the ? operator in TypeScript?
+->	The ? operator is used to indicate that a property or parameter is optional, meaning it can be undefined or omitted.
