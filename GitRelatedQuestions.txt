@@ -1,1 +1,47 @@
 //Here Questions and answers related to git
+1.  What is git stash and why its useful?
+->  Git stash is the feature in git where we can save our changes temporarily rather than commiting in to our branch.
+    Its helpful when you want to switch to other branch or want to pull some changes from remote repository to your rep.
+
+2.  How do you stash your code in  git and pull them back?
+->  //command to stash your latest changes.
+    git stash save "your message"
+    //command to see the stashed commits
+    git stash list
+    //command to retrive most recent stashed commit
+    git stash apply
+    //command to retrieve any stashed commit number 2
+    git stash apply stash@{2}
+
+3.  What is the difference bw git and github?
+->  Git is a version control system whereas github is a web-based platform where we can store your git repositories.
+
+4.  What is git merge conflict?
+->  Git merge conflict occures when two branches have the some changes in the same line of code, in that moment git is unable to reconsile which changes to be     
+     picked  up, so asks users to solve the conflict manually.
+
+5.  What is a git revert?
+->  Git revert is a command which is used to undo your changes made by previous commit, it basically reverses those changes.
+    //to perform git reverse
+    //first get which commit to be reverted
+      git log
+    //after getting commit id from log
+      git revert <commit_has>
+      git revert abcdef1234567890
+
+6.  What is git rebase?
+->  Git rebase is command to move,combine,modify ,re organise your commits as if you are writing from scatch.
+    Example:
+    Imagine you have a project with three commits:
+    
+    Commit A: "Initial setup"
+    Commit B: "Add feature X"
+    Commit C: "Fix bug in feature X"
+    If you want to combine the changes from Commit B and Commit C into one commit, you can use rebase.
+    
+    plaintext
+    Copy code
+    git rebase -i HEAD~2
+
+7. Difference bw git pull and git fetch?
+-> git pull fetches changes from remote branch and merges them into your currnt branch whereas git fetche also fetches the changes but dont merge them.
